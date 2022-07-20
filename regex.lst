@@ -1,0 +1,12 @@
+# En el video se utilizan las siguientes expresiones y que requieren mejora (no son perfectas btw)
+##  password
+egrep -iR "(pass|passw(or)?d|token|key|api|secret).*=" *
+
+##  email
+egrep "[a-zA-Z0-9\-_\.]{2,}\@[a-zA-Z0-9\-_\.]+"
+
+##  paths
+egrep "(\/[a-zA-Z0-9\-_\.\#]+)+"
+
+## Possibles endpoints
+egrep 'https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)'
